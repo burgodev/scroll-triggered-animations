@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Worldcoin, Welcome, Portfolio } from "./components";
+import { Welcome, Portfolio } from "./components";
 
 export default function Home() {
   return (
