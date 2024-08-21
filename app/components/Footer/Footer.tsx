@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React from "react";
 import "tailwindcss/tailwind.css";
 
 const Footer: React.FC = () => {
@@ -23,4 +23,4 @@ const Footer: React.FC = () => {
   );
 };
 
-export default memo(Footer);
+export default Footer;
