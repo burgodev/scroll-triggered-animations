@@ -4,8 +4,8 @@ import React from "react";
 import "tailwindcss/tailwind.css";
 import useElementsRef from "@/app/hooks/useElementsRef";
 import Image, { StaticImageData } from "next/image";
-import { CompanyImage } from "../CompanyImage";
-import { CompanyDescription } from "../CompanyDescription";
+import { CompanyImage } from "./components/CompanyImage";
+import { CompanyDescription } from "./components/CompanyDescription";
 
 type CompanyProps = {
   id: string;
