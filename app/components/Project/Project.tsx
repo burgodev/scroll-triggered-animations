@@ -39,33 +39,27 @@ const Project: React.FC<ProjectProps> = ({
       ref={(el: HTMLDivElement | null) => {
         if (el) elementsRef.current.push(el);
       }}
-      className="opacity-0 transition-opacity duration-1000 gap-[1rem] md:gap-[2rem] lg:gap-[3rem] mt-50 flex justify-between gap-24"
+      className="opacity-0 transition-opacity duration-1000 mt-50 grid grid-cols-12 gap-4"
     >
-      <div className="flex-1">
+      <div className="col-span-5 max-h-[900px]">
         <Image
           src={img.src}
           alt={img.alt}
-          layout="responsive"
-          objectFit="contain"
-          className="w-[100%] h-auto"
+          className="w-[100%] h-[100%] object-contain"
         />
       </div>
 
-      <div className="flex flex-col flex-1 gap-[1.5rem]">
+      <div className="col-span-6 col-start-7 flex flex-col gap-[1.5rem]">
         <Image
           src={logo.src}
           alt={logo.alt}
           className="dark:invert "
-          width={300}
-          height={44}
+          width={200}
+          height={60}
           priority
         />
-        <p>
-          {"Our team supported Worldcoin's growth"}
-          <br />
-          {"from 80 to 3,000,000 unique users."}
-        </p>
-        <a href="https://worldcoin.org/" target="_blank">
+        <p>{description}</p>
+        <a href={link} target="_blank">
           {"Visit site"}
         </a>
       </div>
