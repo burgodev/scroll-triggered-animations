@@ -24,6 +24,19 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  h1 {
+    font-size: 88px;
+    color: #101010;
+  }
+  span {
+    color: color-mix(in srgb, currentColor, transparent 50%);
+  }
+  p {
+    font-size: 32px;
+  }
+  a {
+    text-decoration: underline;
+  }
 }
 
 @layer utilities {
