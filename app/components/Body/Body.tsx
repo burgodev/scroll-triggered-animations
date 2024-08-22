@@ -1,5 +1,4 @@
 import React, { memo } from "react";
-import "tailwindcss/tailwind.css";
 import { Inter } from "next/font/google";
 
 const Body: React.FC<{ children: React.ReactNode }> = ({ children }) => {

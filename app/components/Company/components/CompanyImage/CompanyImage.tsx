@@ -1,5 +1,5 @@
 import React from "react";
-import "tailwindcss/tailwind.css";
+
 import Image from "next/image";
 import { Image as ImageType } from "@/app/types/image";
 

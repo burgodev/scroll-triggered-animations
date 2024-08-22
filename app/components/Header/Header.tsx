@@ -1,5 +1,5 @@
 import React from "react";
-import "tailwindcss/tailwind.css";
+
 import { ThemeToggle } from "../ThemeToggle";
 import { HomeButton } from "../HomeButton";
 

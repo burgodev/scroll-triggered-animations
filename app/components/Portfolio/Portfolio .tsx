@@ -1,5 +1,4 @@
 import React, { memo } from "react";
-import "tailwindcss/tailwind.css";
 
 import { Company, MainProject } from "..";
 import { COMPANIES_DATA } from "@/app/api/mocks/data";

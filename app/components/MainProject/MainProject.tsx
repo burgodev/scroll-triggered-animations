@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import "tailwindcss/tailwind.css";
 
 import Image from "next/image";
 import worldcoinImage from "../../../public/worldcoin.webp";

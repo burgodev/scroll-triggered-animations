@@ -1,7 +1,6 @@
 "use client";
 
 import React, { memo } from "react";
-import "tailwindcss/tailwind.css";
 import { CompanyImage } from "./components/CompanyImage";
 import { CompanyDescription } from "./components/CompanyDescription";
 import { Company as CompanyType } from "@/app/types/company";

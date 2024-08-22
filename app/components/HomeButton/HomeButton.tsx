@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import "tailwindcss/tailwind.css";
+
 import otofellerLogo from "../../../public/ottofellerlogo.svg";
 import Image from "next/image";
 

@@ -2,7 +2,6 @@
 
 import useIntersectionAnimation from "@/app/hooks/useIntersectionAnimation";
 import React from "react";
-import "tailwindcss/tailwind.css";
 
 const Welcome: React.FC = () => {
   const intersectionAnimation = useIntersectionAnimation({
