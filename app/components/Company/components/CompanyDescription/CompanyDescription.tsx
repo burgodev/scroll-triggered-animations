@@ -25,12 +25,12 @@ const CompanyDescription: React.FC<CompanyDescriptionProps> = ({
         src={logo.src}
         alt={logo.alt}
         className="dark:invert"
-        width={200}
+        width={132}
         height={60}
         priority
       />
-      <p className="max-w-[550px]">{description}</p>
-      <a href={link} target="_blank">
+      <p className="max-w-[820px] mt-3 text-[52px]">{description}</p>
+      <a href={link} target="_blank" className="text-[24px]">
         {"Visit site"}
       </a>
     </div>

@@ -18,7 +18,7 @@ type CompanyImageProps = {
 
 const CompanyImage: React.FC<CompanyImageProps> = ({ img }) => {
   return (
-    <div className="col-span-5 max-h-[900px]">
+    <div className="col-span-5">
       <Image
         src={img.src}
         alt={img.alt}

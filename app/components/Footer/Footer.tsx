@@ -2,9 +2,6 @@ import React from "react";
 import "tailwindcss/tailwind.css";
 
 const Footer: React.FC = () => {
-  {
-    /* todo: color theme bg-#101010*/
-  }
   return (
     <footer className="w-[100%] h-[820px] grid grid-cols-12 py-[52px] text-[24px] dark:bg-white dark:text-[#101010] bg-[#101010] text-white dark:bg-none font-sans">
       <div className="flex flex-col col-span-6 col-start-7 justify-end max-w-[820px] gap-6 px-3">
