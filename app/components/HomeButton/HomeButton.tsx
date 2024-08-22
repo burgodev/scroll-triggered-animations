@@ -4,11 +4,10 @@ import React from "react";
 
 import otofellerLogo from "../../../public/ottofellerlogo.svg";
 import Image from "next/image";
+import { useScrollToTop } from "@/app/hooks";
 
 const HomeButton: React.FC = () => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  const scrollToTop = useScrollToTop();
 
   return (
     <button onClick={scrollToTop}>
@@ -16,7 +15,7 @@ const HomeButton: React.FC = () => {
         src={otofellerLogo}
         alt={"Otofeller company logo"}
         className="dark:invert"
-        width={72}
+        width={72} // TODO: responsive
         height={72}
         priority
       />

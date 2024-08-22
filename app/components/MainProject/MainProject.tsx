@@ -5,7 +5,7 @@ import React from "react";
 import Image from "next/image";
 import worldcoinImage from "../../../public/worldcoin.webp";
 import worldcoinLogo from "../../../public/worldcoin.svg";
-import useIntersectionAnimation from "@/app/hooks/useIntersectionAnimation";
+import { useIntersectionAnimation } from "@/app/hooks";
 
 const MainProject: React.FC = () => {
   const intersectionAnimation = useIntersectionAnimation({

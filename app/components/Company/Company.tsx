@@ -4,7 +4,7 @@ import React, { memo } from "react";
 import { CompanyImage } from "./components/CompanyImage";
 import { CompanyDescription } from "./components/CompanyDescription";
 import { Company as CompanyType } from "@/app/types/company";
-import useIntersectionAnimation from "@/app/hooks/useIntersectionAnimation";
+import { useIntersectionAnimation } from "@/app/hooks";
 
 type CompanyProps = CompanyType;
 

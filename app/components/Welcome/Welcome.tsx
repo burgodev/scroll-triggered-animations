@@ -1,6 +1,6 @@
 "use client";
 
-import useIntersectionAnimation from "@/app/hooks/useIntersectionAnimation";
+import { useIntersectionAnimation } from "@/app/hooks";
 import React from "react";
 
 const Welcome: React.FC = () => {
