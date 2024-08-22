@@ -2,20 +2,21 @@
 
 import React from "react";
 import "tailwindcss/tailwind.css";
-import useElementsRef from "@/app/hooks/useElementsRef";
+
 import Image from "next/image";
 import worldcoinImage from "../../../public/worldcoin.webp";
 import worldcoinLogo from "../../../public/worldcoin.svg";
+import useIntersectionAnimation from "@/app/hooks/useIntersectionAnimation";
 
 const MainProject: React.FC = () => {
-  const elementsRef = useElementsRef(); // TODO: either this is a multiple ref and I pass it as a prop for all components or I change the hook to be single ref and use internally
+  const intersectionAnimation = useIntersectionAnimation({
+    animation: "animate-scaleUp",
+  });
 
   return (
     <section>
       <div
-        ref={(el: HTMLDivElement | null) => {
-          if (el) elementsRef.current.push(el);
-        }}
+        ref={intersectionAnimation}
         className="opacity-0 transition-opacity duration-1000 flex flex-col gap-[1rem] md:gap-[2rem] lg:gap-[3rem]"
       >
         <Image
@@ -40,7 +41,11 @@ const MainProject: React.FC = () => {
               <br />
               {"from 80 to 3,000,000 unique users."}
             </p>
-            <a href="https://worldcoin.org/" target="_blank">
+            <a
+              href="https://worldcoin.org/"
+              target="_blank"
+              className="hover:cursor-pointer text-base md:text-sm lg:text-md"
+            >
               {"Visit site"}
             </a>
           </div>

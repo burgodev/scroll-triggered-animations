@@ -36,24 +36,19 @@ const config: Config = {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
-        slideInFromLeft: {
-          "0%": { transform: "translateX(-100%)", opacity: "0" },
-          "100%": { transform: "translateX(0)", opacity: "1" },
-        },
-        slideInFromRight: {
-          "0%": { transform: "translateX(100%)", opacity: "0" },
-          "100%": { transform: "translateX(0)", opacity: "1" },
-        },
         scaleUp: {
-          "0%": { transform: "scale(0.5)", opacity: "0" },
+          "0%": { transform: "scale(0.85)", opacity: "0" },
+          "100%": { transform: "scale(1)", opacity: "1" },
+        },
+        scaleDown: {
+          "0%": { transform: "scale(1.15)", opacity: "0" },
           "100%": { transform: "scale(1)", opacity: "1" },
         },
       },
       animation: {
         fadeIn: "fadeIn 1s ease-in-out forwards",
-        slideInFromLeft: "slideInFromLeft 1s ease-in-out forwards",
-        slideInFromRight: "slideInFromRight 1s ease-in-out forwards",
         scaleUp: "scaleUp 1s ease-in-out forwards",
+        scaleDown: "scaleDown 1s ease-in-out forwards",
       },
       width: {
         "svg-xs": "80px",
