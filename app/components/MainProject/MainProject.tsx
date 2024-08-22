@@ -3,35 +3,11 @@
 import React from "react";
 import "tailwindcss/tailwind.css";
 import useElementsRef from "@/app/hooks/useElementsRef";
-import Image, { StaticImageData } from "next/image";
-import worldCoinImage from "../../../public/worldcoin.webp";
+import Image from "next/image";
+import worldcoinImage from "../../../public/worldcoin.webp";
+import worldcoinLogo from "../../../public/worldcoin.svg";
 
-type Image = {
-  src: string;
-  alt: string;
-};
-
-type MainProjectProps = {
-  id: string;
-  description: string;
-  link: string;
-  img: {
-    src: StaticImageData;
-    alt: string;
-  };
-  logo: {
-    src: StaticImageData;
-    alt: string;
-  };
-};
-
-const MainProject: React.FC<MainProjectProps> = ({
-  id,
-  description,
-  link,
-  img,
-  logo,
-}) => {
+const MainProject: React.FC = () => {
   const elementsRef = useElementsRef(); // TODO: either this is a multiple ref and I pass it as a prop for all components or I change the hook to be single ref and use internally
 
   return (
@@ -43,26 +19,23 @@ const MainProject: React.FC<MainProjectProps> = ({
         className="opacity-0 transition-opacity duration-1000 flex flex-col gap-[1rem] md:gap-[2rem] lg:gap-[3rem]"
       >
         <Image
-          src={worldCoinImage}
+          src={worldcoinImage}
           alt="Worldcoin"
           layout="responsive"
           objectFit="contain"
-          className="w-[100%] h-auto"
         />
 
-        <div className="flex flex-col sm:flex-row justify-between">
-          <div className="flex-1">
+        <div className="flex justify-between gap-8">
+          <div className="max-w-fit">
             <Image
-              src="/worldcoin.svg"
+              src={worldcoinLogo}
               alt="Worldcoin Logo"
-              className="dark:invert "
-              width={300}
-              height={44}
+              className="dark:invert w-svg-sm h-svg-sm md:w-svg-md md:h-svg-md lg:w-svg-lg lg:h-svg-lg xl:w-svg-xl xl:h-svg-xl"
               priority
             />
           </div>
-          <div className="flex flex-col flex-1 gap-[1.5rem]">
-            <p>
+          <div className="flex flex-col flex-1 gap-[1.5rem] max-w-fit">
+            <p className="text-base md:text-md lg:text-lg">
               {"Our team supported Worldcoin's growth"}
               <br />
               {"from 80 to 3,000,000 unique users."}

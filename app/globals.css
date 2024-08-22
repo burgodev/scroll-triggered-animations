@@ -19,18 +19,13 @@
 body {
   color: rgb(var(--foreground-rgb));
   h1 {
-    font-size: 124px;
     line-height: normal;
   }
   span {
     color: color-mix(in srgb, currentColor, transparent 50%);
   }
-  p {
-    font-size: 32px;
-  }
   a {
     text-decoration: underline;
-    font-size: 20px;
   }
 }
 
