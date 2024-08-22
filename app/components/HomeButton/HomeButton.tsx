@@ -14,9 +14,7 @@ const HomeButton: React.FC = () => {
       <Image
         src={otofellerLogo}
         alt={"Otofeller company logo"}
-        className="dark:invert"
-        width={72} // TODO: responsive
-        height={72}
+        className="dark:invert w-svg-xxs h-svg-xxs md:w-svg-xs md:h-svg-xs"
         priority
       />
     </button>

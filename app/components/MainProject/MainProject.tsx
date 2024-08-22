@@ -26,7 +26,7 @@ const MainProject: React.FC = () => {
         />
 
         <div className="flex justify-between gap-8">
-          <div className="max-w-fit">
+          <div className="flex-1">
             <Image
               src={worldcoinLogo}
               alt="Worldcoin Logo"
@@ -34,7 +34,7 @@ const MainProject: React.FC = () => {
               priority
             />
           </div>
-          <div className="flex flex-col flex-1 gap-[1.5rem] max-w-fit">
+          <div className="flex flex-col flex-1 gap-[1.5rem]">
             <p className="text-base md:text-md lg:text-lg">
               {"Our team supported Worldcoin's growth"}
               <br />

@@ -9,10 +9,10 @@ const Footer: React.FC = () => {
         </p>
 
         <div className="flex gap-6 underline mt-[52px]">
-          <a className="hover:cursor-pointer text-base md:text-md lg:text-lg">
+          <a className="hover:cursor-pointer text-sm md:text-base lg:text-md">
             Blog
           </a>
-          <a className="hover:cursor-pointer text-base md:text-md lg:text-lg">
+          <a className="hover:cursor-pointer text-sm md:text-base lg:text-md">
             Policies
           </a>
         </div>
