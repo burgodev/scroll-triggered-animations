@@ -1,9 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { memo } from "react";
 import "tailwindcss/tailwind.css";
 import useElementsRef from "@/app/hooks/useElementsRef";
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
 import { CompanyImage } from "./components/CompanyImage";
 import { CompanyDescription } from "./components/CompanyDescription";
 
@@ -31,10 +31,10 @@ const Company: React.FC<CompanyProps> = ({ ...props }) => {
       }}
       className="opacity-0 transition-opacity duration-1000 mt-50 grid grid-cols-12 gap-4"
     >
-      <CompanyImage {...props} />,
+      <CompanyImage {...props} />
       <CompanyDescription {...props} />
     </div>
   );
 };
 
-export default Company;
+export default memo(Company);
