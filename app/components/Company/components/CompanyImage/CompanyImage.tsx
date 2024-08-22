@@ -1,19 +1,10 @@
-"use client";
-
 import React from "react";
 import "tailwindcss/tailwind.css";
-import Image, { StaticImageData } from "next/image";
-
-type Image = {
-  src: string;
-  alt: string;
-};
+import Image from "next/image";
+import { Image as ImageType } from "@/app/types/image";
 
 type CompanyImageProps = {
-  img: {
-    src: StaticImageData; // TODO: type pick
-    alt: string;
-  };
+  img: ImageType;
 };
 
 const CompanyImage: React.FC<CompanyImageProps> = ({ img }) => {

@@ -1,18 +1,13 @@
-"use client";
-
 import React from "react";
 import "tailwindcss/tailwind.css";
-import useElementsRef from "@/app/hooks/useElementsRef";
-import Image, { StaticImageData } from "next/image";
 
-type CompanyDescriptionProps = {
-  description: string; // TODO: pick types
-  link: string;
-  logo: {
-    src: StaticImageData;
-    alt: string;
-  };
-};
+import Image from "next/image";
+import { Company as CompanyType } from "@/app/types/company";
+
+type CompanyDescriptionProps = Pick<
+  CompanyType,
+  "description" | "link" | "logo"
+>;
 
 const CompanyDescription: React.FC<CompanyDescriptionProps> = ({
   description,

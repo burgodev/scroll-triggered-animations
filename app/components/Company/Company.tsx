@@ -3,23 +3,11 @@
 import React, { memo } from "react";
 import "tailwindcss/tailwind.css";
 import useElementsRef from "@/app/hooks/useElementsRef";
-import { StaticImageData } from "next/image";
 import { CompanyImage } from "./components/CompanyImage";
 import { CompanyDescription } from "./components/CompanyDescription";
+import { Company as CompanyType } from "@/app/types/company";
 
-type CompanyProps = {
-  id: string;
-  description: string;
-  link: string;
-  img: {
-    src: StaticImageData;
-    alt: string;
-  };
-  logo: {
-    src: StaticImageData;
-    alt: string;
-  };
-};
+type CompanyProps = CompanyType;
 
 const Company: React.FC<CompanyProps> = ({ ...props }) => {
   const elementsRef = useElementsRef(); // TODO: either this is a multiple ref and I pass it as a prop for all components or I change the hook to be single ref and use internally
