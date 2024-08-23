@@ -1,4 +1,3 @@
-// TODO: this imports looks messy
 import zeroImage from "../../../public/zero.webp";
 import zeroLogo from "../../../public/zerologo.svg";
 import microfellerImage from "../../../public/microfeller.webp";
