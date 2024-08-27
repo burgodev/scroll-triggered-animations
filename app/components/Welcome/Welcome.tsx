@@ -12,9 +12,9 @@ const Welcome: React.FC = () => {
     <section>
       <div
         ref={intersectionAnimation}
-        className="grid min-h-svh place-items-center grid-cols-entire max-w-[1600px]"
+        className="grid min-h-svh place-items-center grid-cols-entire max-w-[85vw] lg:max-w-[50vw]"
       >
-        <h1 className="text-center mb-[60px] text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
+        <h1 className="text-center mb-[60px] text-[5vw] lg:text-[3vw]">
           Software engineering turns ideas into multi-billion dollar companies.
           <br />
           <span>We cut through the complexity to make businesses thrive.</span>
