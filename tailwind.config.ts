@@ -12,6 +12,9 @@ const config: Config = {
       fontFamily: {
         sans: ["Neue Montreal", "sans-serif"],
       },
+      colors: {
+        "custom-mix": "color-mix(in srgb, currentColor, transparent 50%)",
+      },
       fontSize: {
         sm: "0.8rem",
         base: "1vw",

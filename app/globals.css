@@ -6,12 +6,13 @@ body {
   h1 {
     line-height: normal;
   }
-  span {
-    color: color-mix(in srgb, currentColor, transparent 50%);
-  }
   a {
     text-decoration: underline;
   }
+}
+
+.custom-color-mix {
+  color: color-mix(in srgb, currentColor, transparent 50%);
 }
 
 @layer utilities {
