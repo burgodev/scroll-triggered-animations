@@ -18,8 +18,8 @@ const config: Config = {
       fontSize: {
         sm: "0.8rem",
         base: "1vw",
-        md: "1.5vw",
-        lg: "2vw",
+        md: "1.25vw",
+        lg: "1.5vw",
         xl: "2.5vw",
         "2xl": "3vw",
         "3xl": "3.5vw",
